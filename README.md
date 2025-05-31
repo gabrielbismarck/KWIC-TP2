@@ -76,7 +76,7 @@ the quick brown fox         from The quick brown fox
 ## Authors
 
 - Gabriel Bismarck - 17/0103323
-- Pedro Henrique Barcellos - 251031936
+- Pedro Henrique Barcellos - 25/1031936
 
 ## Video
 
