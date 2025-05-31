@@ -33,7 +33,7 @@ KWIC/
 
 ## Running the test
 
-    ```pytest teste_KWIC.py```
+    pytest teste_KWIC.py
 
 
 ## Input and Output
