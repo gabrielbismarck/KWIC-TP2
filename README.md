@@ -4,7 +4,8 @@ This project implements KWIC algorithm using **Pipeline** programming style. As 
 
 ## Objective
 
-The goal of this program is to take a list of titles from the input.txt file and generate an ordered list of keywoards in context
+The goal of this program is to take a list of titles from the 
+´´´input.txt``` file and generate an ordered list of keywoards in context
 
 - Read ```input.txt```
 - Remove stop words from the titles
