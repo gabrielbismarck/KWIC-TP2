@@ -9,13 +9,14 @@ The algorithm takes a list the input file containing titles -> remove stop words
 ## Project Structure
 
 KWIC/
+```
 ↳ .gitignore        # ignore files and folder when commiting
 ↳ kwic.py           # main implementations of the project
 ↳ README.md         # Project documentation
 ↳ input.txt         # input titles
 ↳ stop_words.txt    # list of stop words
 ↳ test_KWIC.py      # unit test using pytest
-
+```
 ## How to run
 
 1. Requirements: 
