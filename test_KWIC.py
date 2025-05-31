@@ -1,5 +1,5 @@
 import pytest 
-from KWIC import keyword_title_tuple_generator, circular_shift
+from kwic import keyword_title_tuple_generator, circular_shift
 
 @pytest.fixture
 def input_data():
