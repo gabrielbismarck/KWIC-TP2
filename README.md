@@ -4,7 +4,13 @@ This project implements KWIC algorithm using **Pipeline** programming style. As 
 
 ## Objective
 
-The algorithm takes a list from the input file containing titles -> remove stop words from those titles -> generates circular shifts -> sort the output -> print results.
+The goal of this program is to take a list of titles from the input.txt file and generate an ordered list of keywoards in context
+
+- Read ```input.txt```
+- Remove stop words from the titles
+- Generate circular shifts
+- Sort the output alphabetically
+- Print the results
 
 ## Project Structure
 
