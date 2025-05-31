@@ -1,4 +1,4 @@
-# KWIC- Keyword in COntext
+# KWIC - Keyword in Context
 
 This project implements KWIC algorithm using **Pipeline** programming style. As a refernce we used the book _Exercises in Programming Style_ by Cristina Lopes.
 
