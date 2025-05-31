@@ -3,17 +3,17 @@ from KWIC import keyword_title_tuple_generator, circular_shift
 
 @pytest.fixture
 def input_data():
-    titulos = [
+    titles = [
         "The quick brown fox",
         "A brown cat sat",
         "The cat is brown"
     ]
     stop_words = ["the", "a", "is"]
-    return titulos, stop_words
+    return titles, stop_words
 
-def test_stop_word_removal(sample_data):
-  titulos, stop_words = sample_data
-  result = keyword_title_tuple_generator(titulos, stop_words)
+def test_stop_word_removal(input_data):
+  titles, stop_words = input_data
+  result = keyword_title_tuple_generator(titles, stop_words)
   
   keywords = [keywords for keyword, _ in result]
   
