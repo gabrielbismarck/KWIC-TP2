@@ -15,7 +15,7 @@ def test_stop_word_removal(input_data):
   titles, stop_words = input_data
   result = keyword_title_tuple_generator(titles, stop_words)
   
-  keywords = [keywords for keyword, _ in result]
+  keywords = [keyword for keyword, _ in result]
   
   for stop in stop_words:
     assert stop not in keywords
