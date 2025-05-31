@@ -29,8 +29,9 @@ def test_circular_shift():
     shift = circular_shift(keyword, title)
     assert shift == "quick brown fox The"
 
+    title2 = "A brown cat sat"
     keyword2 = "brown"
-    shift2 = circular_shift(keyword2, title)
+    shift2 = circular_shift(keyword2, title2)
     assert shift2 == "brown cat sat A"
 
     keyword_not_in_title = "banana"
