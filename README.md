@@ -4,13 +4,13 @@ This project implements KWIC algorithm using **Pipeline** programming style. As 
 
 ## Objective
 
-The algorithm takes a list the input file containing titles -> remove stop words from those titles -> generates circular shifts -> sort the output -> print results.
+The algorithm takes a list from the input file containing titles -> remove stop words from those titles -> generates circular shifts -> sort the output -> print results.
 
 ## Project Structure
 
 KWIC/
 ```
-↳ .gitignore        # ignore files and folder when commiting
+↳ .gitignore        # ignore files and folder when committing
 ↳ kwic.py           # main implementations of the project
 ↳ README.md         # Project documentation
 ↳ input.txt         # input titles
@@ -33,7 +33,7 @@ KWIC/
 
 ## Running the test
 
-    pytest teste_KWIC.py
+    pytest test_KWIC.py
 
 
 ## Input and Output
