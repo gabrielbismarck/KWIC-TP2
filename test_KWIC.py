@@ -2,13 +2,14 @@ import pytest
 from KWIC import keyword_title_tuple_generator, circular_shift
 
 @pytest.fixture
-def sample_data():
-  titulos = [
-    "O poder da mente",
-    "A força do hábito"
-  ]
-  stop_words = ["o", "a", "da", "do"]
-  return titulos, stop_words
+def input_data():
+    titulos = [
+        "The quick brown fox",
+        "A brown cat sat",
+        "The cat is brown"
+    ]
+    stop_words = ["the", "a", "is"]
+    return titulos, stop_words
 
 def test_stop_word_removal(sample_data):
   titulos, stop_words = sample_data
@@ -19,19 +20,19 @@ def test_stop_word_removal(sample_data):
   for stop in stop_words:
     assert stop not in keywords
   
-  for word in ["poder", "mente", "força", "hábito"]:
+  for word in ["quick", "brown", "fox", "cat", "sat"]:
     assert word in keywords
     
 def test_circular_shift():
-    keyword = "poder"
-    title = "O poder da mente"
+    keyword = "quick"
+    title = "The quick brown fox"
     shift = circular_shift(keyword, title)
-    assert shift == "poder da mente o"
+    assert shift == "quick brown fox The"
 
-    keyword2 = "mente"
+    keyword2 = "brown"
     shift2 = circular_shift(keyword2, title)
-    assert shift2 == "mente o poder da"
+    assert shift2 == "brown cat sat A"
 
-    keyword_not_in_title = "energia"
+    keyword_not_in_title = "banana"
     shift3 = circular_shift(keyword_not_in_title, title)
-    assert shift3 == "O poder da mente" 
+    assert shift3 == "The quick brown fox" 
