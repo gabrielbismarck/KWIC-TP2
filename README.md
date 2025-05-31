@@ -38,7 +38,7 @@ KWIC/
 
 ## Input and Output
 
-# Input
+### Input
 
 **input.txt**
     ```The quick brown fox
@@ -51,7 +51,7 @@ KWIC/
     a```
 
 
-# Output
+### Output
 
 ```
 brown cat sat a             from A brown cat sat
